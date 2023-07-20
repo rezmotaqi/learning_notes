@@ -1,0 +1,35 @@
+
+
+what are python closures ?
+    answer:
+        short version explanation:
+            an outside func that wraps an inside function
+            outside func takes x and returns inside func
+            inside func takes y and returns x + y
+            so by calling outside func you get the inside func object
+            example:
+                def outside(x):
+                    def inside(y):
+                        return x + y
+                    return inside
+                so by calling outside func with x you get inside func object
+                normally one would think when outside func is run, values in its scopes are deleted from memory.
+                this is where the concept of closure comes in.
+                a = outside(x)
+                what is a ?
+                a is a closure.
+                what does that mean ?
+                it means you can call this object like:
+                b = a(y)
+                what is b ?
+                consider x=10 and y=5
+                so b is 15.
+                what just happened there ?
+                to put it in a concise way:
+                a which is our closure, kept the value of x and when a it self
+                is called takes y and returns x + y, value of x is kept in the closure object
+                even though outside func is run and its scope variables would be would have been deleted
+                if python did not have the concept of closure
+
+
+
