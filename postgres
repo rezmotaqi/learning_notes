@@ -1,0 +1,18 @@
+
+
+when postgres is installed, user "postgres" in automatically created
+
+to login you have to su to "postgres" user (as noted in docs, to login in postgres the user must not be root,
+and as default there is the "postgres" user which you have to su in order to access postgres interactive terminal)
+
+so it like this, after installing the db,
+sudo su postgres
+psql -> postgres terminal is opened, sql queried can be used here, as well as postgres commands
+
+like:
+    \d table_name	Describe a table such as a column, type, modifiers of columns, etc.
+
+
+    \dt	List available tables
+
+    \l	List available databases
