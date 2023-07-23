@@ -1,0 +1,9 @@
+    raise MigrationSchemaMissing(
+django.db.migrations.exceptions.MigrationSchemaMissing: Unable to create the django_migrations table (permission denied for schema public
+LINE 1: CREATE TABLE "django_migrations" ("id" bigint NOT NULL PRIMA...
+
+
+
+go to postgres interactive terminal and use this to give the specified user all permissions of specified db
+
+ALTER DATABASE db_name OWNER TO user_name;
