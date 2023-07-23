@@ -1,0 +1,9 @@
+
+
+
+export DJANGO_SETTINGS_MODULE="django_project_directory".settings
+
+
+if encountered with the bellow error
+
+ImproperlyConfigured: You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings
