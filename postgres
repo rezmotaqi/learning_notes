@@ -7,6 +7,12 @@ and as default there is the "postgres" user which you have to su in order to acc
 
 so it like this, after installing the db,
 sudo su postgres
+
+password problem = if db is up in docker you can inspect container and after su postgres, use psql to open postgres terminal
+and then use ALTER USER postgres PASSWORD 'myPassword';
+to set password for user.
+if operation is successful ALTER ROLE is returned in terminal.
+
 psql -> postgres terminal is opened, sql queried can be used here, as well as postgres commands
 
 like:
